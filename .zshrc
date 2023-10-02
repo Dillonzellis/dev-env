@@ -103,8 +103,8 @@ export PATH="/opt/homebrew/opt/php@8.0/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.0/sbin:$PATH"
 
 # import aliases
-if [ -f ~/commonrc/aliasrc ]; then
-   source ~/commonrc/aliasrc
+if [ -f ~/.dev-env/aliases.sh ]; then
+   source ~/.dev-env/aliases.sh;
 fi
 
 export NVM_DIR="$HOME/.nvm"
