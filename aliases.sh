@@ -12,11 +12,11 @@ alias nvim="XDG_CONFIG_HOME=$DEV_PATH nvim"
 alias vi="XDG_CONFIG_HOME=$DEV_PATH nvim"
 
 # vimwiki git
-alias notepush="git add . && git commit -m \"$(date '+%Y-%m-%d %H:%M:%S')\" && git push"
+alias notepush="(cd ~/vimwiki && git add . && git commit -m \"$(date '+%Y-%m-%d %H:%M:%S')\" && git push)"
 
 alias rf="rm -rf"
 alias lash="ls -lash"
-# alias cl="clear"
+alias cl="clear"
 alias gs="git status"
 alias tmux="tmux -f $DEV_PATH/.tmux.conf"
 
