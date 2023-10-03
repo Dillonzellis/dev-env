@@ -5,7 +5,8 @@ local keymap = vim.keymap -- for conciseness
 
 ----------------------- General Keymaps -------------------
 
-keymap.set("n", "<leader>w", ":w<CR>", { desc = "Save file w"})
+-- save file with w
+keymap.set("n", "<leader>w", ":w<CR>", { desc = "Save file w" })
 
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
@@ -13,8 +14,35 @@ keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
+keymap.set("n", "<leader>rr", ":set invwrap<CR>", { desc = "toggle word wrap" })
+
 -- delete single character without copying into register
--- keymap.set("n", "x", '"_x')
+keymap.set("n", "x", '"_x')
+
+-- fix copy/paste
+keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Yanks to system clipboard" })
+keymap.set("n", "<leader>Y", [["+Y]], { desc = "Yanks line to the system clipboard " })
+
+keymap.set({ "n", "v" }, "<leader>d", [["_d]], { desc = "Deletes without yanking" })
+
+keymap.set("x", "<leader>p", [["_dP]], {
+	desc = "replace the selected lines with whatever you last copied or deleted without saving the lines you're replacing.",
+})
+
+-- replace word under cursor throughout file
+keymap.set(
+	"n",
+	"<leader>s",
+	[[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+	{ desc = "replace word under cursor throughout file" }
+)
+
+-- disable Q
+vim.keymap.set("n", "Q", "<nop>")
+
+-- scroll up/down and center screen
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
