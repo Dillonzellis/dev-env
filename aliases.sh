@@ -43,6 +43,7 @@ alias port="cd ~/Projects/dillonzellis-portfolio/"
 alias ecom="cd ~/Projects/ecommerce-admin/"
 alias mood="cd ~/Projects/mood"
 alias fpic="cd ~/Projects/family-pic/"
+alias rlm="cd ~/Projects/rlm-aff-wp/"
 
 # gbd directories
 BASEDIR="~/Projects/gbd"
