@@ -7,6 +7,8 @@ return {
 		-- set keymaps
 		local keymap = vim.keymap -- for conciseness
 
+		keymap.set("n", "<leader>hh", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>")
+
 		keymap.set(
 			"n",
 			"<leader>hm",
