@@ -63,6 +63,7 @@ alias telco="cd $BASEDIR/telcoplus-utils"
 alias ngcu="cd $BASEDIR/ngcu-util"
 alias hike="cd $BASEDIR/lscu/hikethehill"
 alias byte="cd $BASEDIR/byte-reality"
+alias cua="cd $BASEDIR/cuacg20"
 
 # LSCU directories
 alias lscu-about="cd $BASEDIR/lscu/LSCU-about"
