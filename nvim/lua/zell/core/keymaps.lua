@@ -14,6 +14,7 @@ keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
+-- toggle word wrap
 keymap.set("n", "<leader>rr", ":set invwrap<CR>", { desc = "toggle word wrap" })
 
 -- delete single character without copying into register
