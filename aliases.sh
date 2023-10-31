@@ -10,6 +10,7 @@ alias so="source $DEV_PATH/.zshrc"
 
 alias nvim="XDG_CONFIG_HOME=$DEV_PATH nvim"
 alias vi="XDG_CONFIG_HOME=$DEV_PATH nvim"
+alias ls="colorls"
 
 # vimwiki git
 alias notepush="(cd ~/vimwiki_html && git add . && git commit -m \"$(date '+%Y-%m-%d %H:%M:%S')\" && git push)"
