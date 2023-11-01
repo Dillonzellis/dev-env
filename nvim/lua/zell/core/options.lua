@@ -1,6 +1,6 @@
 local opt = vim.opt -- for conciseness
 
-vim.cmd.colorscheme("habamax")
+-- vim.cmd.colorscheme("gruvbox")
 
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
